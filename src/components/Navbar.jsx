@@ -18,6 +18,12 @@ function Navbar({ setIsLoggedIn }) {
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
           Mi Aplicación
         </Typography>
+        <Button color="inherit" onClick={() => navigate('/home')}>
+          Home
+        </Button>
+        <Button color="inherit" onClick={() => navigate('/users')}>
+          Usuarios
+        </Button>
         <Button color="inherit" onClick={handleLogout}>
           Cerrar Sesión
         </Button>
